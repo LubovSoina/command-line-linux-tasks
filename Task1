@@ -1,7 +1,5 @@
-#! /bin/bash
-
-```
-function test() {
-  console.log("notice the blank line before this function?");
+```javascript
+if (isAwesome){
+  return true
 }
 ```

@@ -1,0 +1,5 @@
+Creating system of subdyrectories and files
+mkdir ~/projects
+mkdir ~/projects/{human,mouse,fly}
+mkdir ~/projects/human/{hg19,hg38}
+touch ~/projects/mouse/{genes,proteins}.txt

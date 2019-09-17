@@ -25,8 +25,14 @@ cat chr20.fa|grep -E "N"|wc -m
 ```
 **ANS: 3590676**
 
-5_6
-
+5. Вывод на экран отсортированный 5 столбец (в алфавитном порядке)
+```bash
+sort -d -k5 snp.vcf
+```
+6. Вывод на экран первых 20 строк отсортированного по последнему столбцу файла *snp.vcf*
+```bash
+cat snp.vcf|sort -n -k6|sed -n '1,20p'
+```
 
 7. Output 20 first sorted lines with seq (-m : dont search after a given occurrence)
 ```bash

@@ -12,6 +12,12 @@ touch ~/projects/mouse/{genes,proteins}.txt
 cd ~/projects/mouse/
 nano genes.txt
 ```
+**echo**
+
+```bash
+touch genes.txt
+echo -e "ATACTACTTCCAAGG \nTGGGCTACTTCCAAGG \nATGATCTACTATATATA \nGGTATGCCT \nTTTTTTAGA">genes.txt
+```
 3. Copy file to another folder and add 5 more lines
 
 ```bash
@@ -19,7 +25,10 @@ cp genes.txt ~/projects/human/hg38
 cd ~/projects/human/hg38
 nano genes.txt
 ```
-
+**echo**
+```bash
+echo -e "ATACTACTTCCG \nTGGGCTAC \nATGATTTTTATA \nAAAAACCT \nTTTGAGAGAAGA">>genes.txt
+```
 4. Output on dysplay (R means: list subdirectories recursively)
 ```bash
 ls -R ~/projects
